@@ -79,9 +79,29 @@ hr {
     color: #000;
     text-decoration: none;
 }
+.site-title--internal {
+    display:inline;
+}
 .site-nav em {
     border-bottom:calc(1rem/16) solid #ccc;
 }
-.home .site-nav {
+.site-nav--home {
     padding-top:0.5rem;
+}
+.site-nav--internal li {
+    display:inline-block;
+    margin-left:1rem;
+}
+.site-nav--internal {
+    text-align:right;
+    display:inline;
+}
+.site-nav--internal ul {
+    display:inline;
+}
+.site-nav--internal li:first-child {
+    margin-left:0;
+}
+.main-content {
+    margin:3rem 0 6rem;
 }
