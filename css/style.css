@@ -79,6 +79,9 @@ hr {
     color: #000;
     text-decoration: none;
 }
+.site-title a:active, .site-nav a:active, .site-title a:hover, .site-nav a:hover, .site-title a:focus, .site-nav a:focus {
+    border-bottom:calc(1rem/16) solid aqua;
+}
 .site-title--internal {
     display:inline;
 }
