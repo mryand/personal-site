@@ -2,6 +2,16 @@ body {
     font-family: 'Fanwood Text', serif;
     padding:6% 7.5%;
 }
+* {
+    transition: all 0.5s ease-out;
+}
+a:link, a:visited {
+    color: inherit;
+    text-decoration-color: #ccc;
+}
+a:focus, a:hover, a:active {
+    text-decoration-color:deepskyblue;
+}
 .accessible-hide, .skip-nav {
     position:absolute;
     left:-9999px;
@@ -41,11 +51,16 @@ hr {
 }
 @media all and (min-width: 550px) {
     .site-title {
-        font-size: calc(80rem/16);
+        font-size: calc(72rem/16);
     }
     .site-nav, .main-content {
         font-size: calc(28rem / 16);
         line-height: calc(38/28);
+    }
+}
+@media all and (min-width: 750px) {
+    .site-title {
+        font-size: calc(80rem/16);
     }
 }
 @media all and (min-width: 900px) {
@@ -78,9 +93,10 @@ hr {
 .site-title a, .site-nav a {
     color: #000;
     text-decoration: none;
+    border-bottom:calc(1rem/16) solid #fff;
 }
 .site-title a:active, .site-nav a:active, .site-title a:hover, .site-nav a:hover, .site-title a:focus, .site-nav a:focus {
-    border-bottom:calc(1rem/16) solid aqua;
+    border-color:deepskyblue;
 }
 .site-nav em {
     border-bottom:calc(1rem/16) solid #ccc;
@@ -94,7 +110,7 @@ hr {
 .site-nav--home li:first-child {
     margin-top:0;
 }
-@media all and (min-width: 550px) {
+@media all and (min-width: 700px) {
     .site-header {
         display: flex;
         width:100%;
