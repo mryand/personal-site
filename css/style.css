@@ -134,6 +134,10 @@ hr {
 .main-content {
     margin:3rem 0 6rem;
 }
+.main-content li {
+    margin-top:0.333em;
+    margin-bottom:0.333em;
+}
 .main-content li li {
     font-size:88%;
 }
