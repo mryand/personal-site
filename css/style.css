@@ -1,3 +1,7 @@
+body {
+    font-family: 'Fanwood Text', serif;
+    padding:5%;
+}
 .accessible-hide, .skip-nav {
     position:absolute;
     left:-9999px;
@@ -14,33 +18,46 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
 .site-title {
-    font-size: calc(64em/16);
+    font-size: calc(64rem/16);
+    margin:0;
+    line-height: 1;
 }
 .site-nav, .main-content {
-    font-size: calc(24em/16);
+    font-size: calc(24rem/16);
+    line-height: calc(32/24);
+}
+hr {
+    width:3rem;
+    height:1rem/16;
+    padding:0;
+    background: #ddd;
+    margin:0.75rem 0;
 }
 @media all and (min-width: 550px) {
     .site-title {
-        font-size: calc(80em/16);
+        font-size: calc(80rem/16);
     }
     .site-nav, .main-content {
-        font-size: calc(28em / 16);
+        font-size: calc(28rem / 16);
+        line-height: calc(38/28);
     }
 }
 @media all and (min-width: 900px) {
     .site-title {
-        font-size: calc(96em/16);
+        font-size: calc(96rem/16);
     }
     .site-nav, .main-content {
-        font-size: calc(32em / 16);
+        font-size: calc(32rem / 16);
+        line-height: calc(43/32);
     }
 }
 @media all and (min-width: 1250px) {
     .site-title {
-        font-size: calc(120em/16);
+        font-size: calc(120rem/16);
     }
     .site-nav, .main-content {
-        font-size: calc(36em / 16);
+        font-size: calc(36rem / 16);
+        line-height: calc(48/36);
     }
 }
 
@@ -52,10 +69,19 @@ h1, h2, h3, h4, h5, h6 {
     margin:0;
     padding:0;
 }
+.site-nav li {
+    margin-top: calc(8rem/16);
+}
+.site-nav li:first-child {
+    margin-top:0;
+}
 .site-title a, .site-nav a {
     color: #000;
     text-decoration: none;
 }
 .site-nav em {
-    border-bottom:calc(1em/24) solid #ccc;
+    border-bottom:calc(1rem/16) solid #ccc;
+}
+.home .site-nav {
+    padding-top:0.5rem;
 }
