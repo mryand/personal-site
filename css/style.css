@@ -1,6 +1,6 @@
 body {
     font-family: 'Fanwood Text', serif;
-    padding:5%;
+    padding:6% 7.5%;
 }
 .accessible-hide, .skip-nav {
     position:absolute;
@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
 .site-title {
-    font-size: calc(64rem/16);
+    font-size: calc(56rem/16);
     margin:0;
     line-height: 1;
 }
@@ -28,10 +28,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 hr {
     width:3rem;
-    height:1rem/16;
+    height:1px;
+    border:none;
     padding:0;
-    background: #ddd;
-    margin:0.75rem 0;
+    background: #ccc;
+    margin:1rem 0;
+}
+@media all and (min-width: 400px) {
+    .site-title {
+        font-size: calc(64rem/16);
+    }
 }
 @media all and (min-width: 550px) {
     .site-title {
@@ -69,12 +75,6 @@ hr {
     margin:0;
     padding:0;
 }
-.site-nav li {
-    margin-top: calc(8rem/16);
-}
-.site-nav li:first-child {
-    margin-top:0;
-}
 .site-title a, .site-nav a {
     color: #000;
     text-decoration: none;
@@ -82,25 +82,35 @@ hr {
 .site-title a:active, .site-nav a:active, .site-title a:hover, .site-nav a:hover, .site-title a:focus, .site-nav a:focus {
     border-bottom:calc(1rem/16) solid aqua;
 }
-.site-title--internal {
-    display:inline;
-}
 .site-nav em {
     border-bottom:calc(1rem/16) solid #ccc;
 }
 .site-nav--home {
     padding-top:0.5rem;
 }
-.site-nav--internal li {
-    display:inline-block;
-    margin-left:1rem;
+.site-nav--home li {
+    margin-top: calc(1rem);
 }
-.site-nav--internal {
-    text-align:right;
-    display:inline;
+.site-nav--home li:first-child {
+    margin-top:0;
+}
+@media all and (min-width: 550px) {
+    .site-header {
+        display: flex;
+        width:100%;
+        align-items: baseline;
+    }
+    .site-nav--internal {
+        flex-grow:1;
+        text-align:right;
+    }
 }
 .site-nav--internal ul {
     display:inline;
+}
+.site-nav--internal li {
+    display:inline-block;
+    margin-left:1rem;
 }
 .site-nav--internal li:first-child {
     margin-left:0;
