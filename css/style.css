@@ -138,6 +138,6 @@ hr {
     margin-top:0.333em;
     margin-bottom:0.333em;
 }
-.main-content li li {
+.main-content li li, .secondary {
     font-size:88%;
 }
