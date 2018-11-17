@@ -154,6 +154,9 @@ hr {
         display: flex;
         width:100%;
     }
+    .pairing--flipped {
+        flex-direction: row-reverse;
+    }
     .pairing>*>:first-child {
         margin-top:0;
     }
