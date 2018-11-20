@@ -146,6 +146,9 @@ hr {
 .main-content li li {
     font-size:88%;
 }
+.pairing {
+    padding-bottom:3%;
+}
 .pairing__secondary {
     font-size: 75%;
 }
