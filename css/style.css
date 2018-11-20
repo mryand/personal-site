@@ -153,9 +153,13 @@ hr {
     .pairing {
         display: flex;
         width:100%;
+        margin-left:-1em;
     }
     .pairing--flipped {
         flex-direction: row-reverse;
+    }
+    .pairing>* {
+        margin-left:1em;
     }
     .pairing>*>:first-child {
         margin-top:0;
